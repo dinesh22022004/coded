@@ -19,8 +19,8 @@
             line-height: 1.6;
         }
 
-        header,
-        footer {
+        header
+         {
             background-color: #333;
             color: #fff;
             padding: 20px;
@@ -41,6 +41,8 @@
 
         nav ul li {
             display: inline;
+            font-size: x-large;
+            font-family: Arial, Helvetica, sans-serif;
         }
 
         nav ul li a {
@@ -71,11 +73,12 @@
         .product img {
             max-width: 100%;
             margin: 0 10px;
+            height: 65%;
+            display: flexbox;
+            justify-content: center;
         }
 
-        footer {
-            margin-top: 20px;
-        }
+      
 
         .search-container {
             display: flex;
@@ -114,23 +117,46 @@
             height: auto;
             display: block;
         }
+        button{
+            color: black;
+            background-color: #007bff ;
+            padding: 10px;
+        }
+        .icon{
+            position: absolute;
+            right: 10%;
+            color: white;
+        }
        
     </style>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 </head>
 
 <body>
 
     <header>
-        <h1>Online Shop</h1>
+        <h1>Metro Shoes</h1>
+        <div class="footer-section social">
+            
+            <div class="icon">
+                <i class="fab fa-facebook-f"></i></a>
+                <i class="fab fa-twitter"></i></a>
+                <i class="fab fa-instagram"></i></a>
+                <i class="fab fa-pinterest"></i></a>
+            </div>
+        </div>
     </header>
 
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="#">Products</a></li>
+            <li><a href="index.html">Products</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
+            <li><a href="service.html">Service</a></li>
             <li><a href="login.html">log in</a></li>
+            <li><a href="blog.html">Blog/suggest</a></li>
             <div class="search-container">
                 <input type="text" placeholder="Search...">
                 <button type="submit">Search</button>
@@ -138,35 +164,8 @@
 
         </ul>
     </nav>
-    <style>body, html {
-        margin: 0;
-        padding: 0;
-        height: 100%;
-      }
-      
-      .animated-button {
-        position: fixed;
-        right: 20px; /* Adjust this value to change the distance from the left edge */
-        top: 10%;
-        transform: translateY(-50%);
-        padding: 10px 20px;
-        font-size: 18px;
-        border-radius: 20;
-        background-color: black;
-        color: #fff;
-        cursor: pointer;
-        transition: all 0.3s ease;
-      }
-      
-      .animated-button:hover {
-        transform: scale(1.1);
-      }
-      </style>
-    <button class="animated-button" id="leftButton"><a href="cloth.html" >Cloth store</a></button>
-    <script>document.getElementById('leftButton').addEventListener('click', function() {
-        // Add animation or functionality for the left button
-        console.log('Left button clicked!');
-      });
+    
+    
       </script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
@@ -180,13 +179,13 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="banner2.jfif" class="d-block w-100" alt="...">
+            <img src="ban001.jpg!w700wp" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="banner1.jfif" class="d-block w-100" alt="...">
+            <img src="ban02.png" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="banner3.jfif" class="d-block w-100" alt="...">
+            <img src="ban03.jpg!w700wp" class="d-block w-100" alt="...">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -206,37 +205,81 @@
                     
                 <h3>Nike soes</h3>
                 <p>$19.99</p>
+                <button>Add to Cart</button>
             </div>
             <div class="product">
                 <img src="img2.jfif" alt="product2">
                     
                 <h3>Asian</h3>
                 <p>$24.99</p>
+                <button>Add to Cart</button>
             </div>
             <div class="product">
                 <img src="img3.jfif"
                     alt="Product 3">
                 <h3>Campus</h3>
                 <p>$29.99</p>
+                <button>Add to Cart</button>
             </div>
             <div class="product">
                 <img src="img4.jfif" alt="product4">
                 <h3>RDX</h3>
                 <p>$29.99</p>
+                <button>Add to Cart</button>
             </div>
             <div class="product">
                 <img src="img5.jfif" alt="product5">
                 <h3>max run</h3>
                 <p>$29.99</p>
+                <button>Add to Cart</button>
             </div>
-            <!-- Add more products as needed -->
+            
         </div>
     </div>
 
+
+    
+<body>
+    
+    
     <footer>
-        <p>&copy; 2024 Online Shop. All rights reserved.</p>
+        <div class="footer-container">
+            <div class="footer-section about">
+                <h2>Metro Shoes</h2>
+                <p>Your one-stop shop for the latest trends in footwear. We offer a wide range of shoes for every occasion, ensuring you step out in style.</p>
+            </div>
+            <div class="footer-section links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="img1.jfif">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="">FAQs</a></li>
+                    <li><a href="blog.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h2>Contact Us</h2>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Shirpur Lane, Fashion City, India</p>
+                <p><i class="fas fa-phone"></i> +1 234 567 890</p>
+                <p><i class="fas fa-envelope"></i> support@shoeshop.com</p>
+            </div>
+            <div class="footer-section social">
+                <h2>Follow Us</h2>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2024 ShoeShop. All rights reserved.
+        </div>
     </footer>
-
 </body>
-
 </html>
+
+
